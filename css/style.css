@@ -280,6 +280,10 @@ section.service-section {
     border: 1px solid rgb(129, 129, 129);
 }
 
+h6.card-subtitle.mb-2.text-muted img {
+    max-width: 55px !important;
+}
+
 .tgfi-title.text-center.py-4 h3 {
     font-weight: 400;
 }
