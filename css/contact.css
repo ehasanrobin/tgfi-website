@@ -1,0 +1,54 @@
+header.contact {
+    background: #cececf;
+}
+
+.contact-banner h1 {
+    font-size: 60px;
+    font-weight: 400;
+    color: rgb(64, 63, 63);
+    text-transform: capitalize;
+    padding-top: 40px;
+}
+
+.contact-banner p {
+    font-size: 30px;
+    max-width: 400px;
+    width: 90%;
+    line-height: 48px;
+    padding-top: 10px;
+    color: rgb(78, 74, 74);
+}
+
+section.contact-banner {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    background: #cececf;
+}
+
+form.contact-form input {
+    border: 2px solid rgb(122, 119, 119);
+    border-radius: 0px;
+    padding: 12px;
+    background: transparent;
+}
+
+form.contact-form label {
+    font-family: poppins;
+    font-weight: 300;
+}
+
+.contact-box {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form.contact-form {
+    max-width: 500px;
+}
+
+p.cotact-title {
+    font-size: 23px;
+}

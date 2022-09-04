@@ -1,0 +1,28 @@
+section.privacy-section {
+    background: #cececf;
+}
+
+header.privacy {
+    background: #cececf;
+}
+
+.privacy-box h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.privacy-box {
+    max-width: 600px;
+    margin: auto;
+}
+
+.privacy-box pre {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.privacy-box p {
+    line-height: 34px;
+    padding-top: 20px;
+    color: #5b5959;
+}
