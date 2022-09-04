@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- aos css  -->
+     <link rel="stylesheet" href="./css/aos.css">
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootsrap css cdn  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!-- custom css  -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
@@ -41,20 +43,23 @@
             <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/index.html"
-                  >Start</a
+                  >Início</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="/index.html#services">Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="/index.html#about">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                <a class="nav-link" href="/index.html#technology">Tecnologia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link contact-btn" href="contact.html">Contact</a>
+                <a class="nav-link" href="privacy.html">política de Privacidade</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link contact-btn" href="contact.html">Contato</a>
               </li>
             </ul>
           </div>
@@ -63,36 +68,38 @@
         <section class="banner-section">
             <div class="container">
                 <div class="benner-content">
-                    <h1>Bad debt can affect your business.</h1>
-                    <p>Count on an agile and transparent recovery!</p>
-                    <a href="#" class="banner-btn"> know more</a>
+                    <h1 data-aos="fade-right" data-aos-duration="500">A inadimplência pode afetar sua empresa.</h1>
+                    <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="50">Conte com uma recuperação ágil e transparente!</p>
+                    <a href="#" data-aos="fade-right"  data-aos-duration="500"data-aos-delay="80" class="banner-btn"> Saiba mais</a>
                 </div>
             </div>
             </div>
         </section>
     </header>
-    <section class="service-section">
+    <section class="service-section" id="services">
         <div class="container">
             <div class="row  ">
                 <div class="col-md-4 offset-md-2">
-                    <div class="mt-5 service-content">
-                        <h2>Discover our services</h2>
-                        <p>TGFi recovers credit throughout the national territory. Check out some of our features below:
+                    <div class="mt-5 service-content" data-aos="flip-left">
+                        <h2 >Conheça nossos serviços</h2>
+                        <p>A TGFi recupera crédito em todo território nacional. Confira ao lado algumas das nossas características:
                         </p>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5" data-aos="fade-up"
+     data-aos-duration="2000">
                     <div class="row  row-cols-xl-2 row-cols-md-1  service-box-col">
                         <div class="col-md-12 service-box-1">
                             <div class="card service-card">
                                 <div class="card-body">
-                                    <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-cloud-arrow-up"></i>
+                                    <h6 class="card-subtitle mb-2 text-muted"> <svg>
+    <image class="change-my-color" xlink:href="https://svgur.com/i/AFM.svg" width="96" height="96" src="ppngfallback.png" />
+</svg>
                                     </h6>
                                     <h5 class="card-title">
                                         Estrutura Tecnológica </h5>
 
-                                    <p class="card-text">Usando a tecnologia certa, hoje podemos fazer todos os passos
-                                        do processo de cobrança on-line. Tornando a cobrança mais segura.</p>
+                                    <p class="card-text">Usando a tecnologia certa, hoje podemos fazer todos os passos do processo de cobrança on-line. Tornando a cobrança mais segura.</p>
                                     <div class="bar"></div>
                                 </div>
                             </div>
@@ -103,11 +110,11 @@
                                     <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-layer-group"></i>
                                     </h6>
                                     <h5 class="card-title">
-                                        Cobrança Virtual</h5>
+                                        Cobrança Preventiva</h5>
 
-                                    <p class="card-text">Os agentes virtuais de cobrança que efetuam contatos
-                                        simultâneos com todos os seus clientes inadimplentes, o que torna o processo de
-                                        cobrança muito mais eficiente</p>
+                                    <p class="card-text">Cobrança eficiente de títulos atrasados para uma recuperação automatizada. Processo totalmente eletrônico de Notificações, Protestos e Cancelamentos de Protesto através da Plataforma da TGFi ou integrado ao seu ERP.
+
+</p>
                                     <div class="bar"></div>
                                 </div>
                             </div>
@@ -146,52 +153,55 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center pt-5">
-                <div class="col-md-6 technology-img">
-                    <div class="text-center">
-                        <h3>About Technology in Financial Management</h3>
+            <div class="row align-items-center pt-5" >
+                <div class="col-md-6 technology-img" >
+                    <div class="text-center" id="about" data-aos="fade-up"
+     data-aos-duration="2000">
+                        <h3>Sobre a Tecnologia em Gestão Financeira</h3>
                     </div>
                 </div>
-                <div class="col-md-4 offset-md-1 p-5">
+                <div class="col-md-4 offset-md-1 p-5" data-aos="fade-right"
+     data-aos-duration="2000">
                     <div class="technology-content">
-                        <p>
-                            We are experts in credit recovery. We have a team that has been in the market for over 15
-                            years, with customers across the country.<br><br>
-                            We offer services adapted to different segments and invest in technology and team training
-                            to ensure the best experience for our customer.</p>
-                        <a href="">know more</a>
+                        <p>Somos especialistas em recuperação de crédito. Contamos com uma equipe que atua há mais de 15 anos no mercado, com clientes em todo o país. <br><br>
+Oferecemos serviços adaptados a diversos segmentos e investimos em tecnologia e na capacitação da equipe para garantir a melhor experiência para o nosso cliente.</p>
+                        <a href="">Saiba mais</a>
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
-    <section class="numbers-section numbers-row">
+    <section class="numbers-section numbers-row" id="technology" >
         <div class="container">
             <div class="row ">
                 <div class="tgfi-title text-center py-4">
-                    <h3>TGFi in numbers</h3>
+                    <h3>TGFi em números</h3>
                 </div>
             </div>
             <div class="row row-cols-sm-1  row-cols-md-2 row-cols-lg-4 ">
                 <div class="col-md-6 text-center number-box">
                     <h4>15</h4>
-                    <p>years of experience</p>
+                    <p data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="50">Anos de experiência</p>
                     <div class="bars"></div>
                 </div>
                 <div class="col-md-6 text-center number-box">
                     <h4>x.xxx</h4>
-                    <p>Registered Title</p>
+                    <p data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="70">Títulos registrados</p>
                     <div class="bars"></div>
                 </div>
                 <div class="col-md-6 text-center number-box">
                     <h4>R$</h4>
-                    <p>Recovered value</p>
+                    <p data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="80">Valor recuperado</p>
                     <div class="bars"></div>
                 </div>
                 <div class="col-md-6 text-center number-box">
                     <h4>75%</h4>
-                    <p>Recovery</p>
+                    <p data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="90">de recuperação</p>
                     <div class="bars"></div>
                 </div>
 
@@ -206,23 +216,27 @@
                     <div class="row">
                         <div class="col-md-4 p-0">
                             <div class="partner-box border">
-                                <h4>Our <br> partners</h4>
+                                <h4 data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="100">Nossos <br> parceiros</h4>
                             </div>
                         </div>
                         <div class="col-md-4 p-0">
                             <div class="partner-box">
-                                <img src="./images/asset 4.png" alt="">
+                                <img data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="200" src="./images/asset 4.png" alt="">
                             </div>
                         </div>
                         <div class="col-md-4 p-0">
                             <div class="partner-box border">
-                                <img src="./images/asset 5.webp" alt="">
+                                <img data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="300" src="./images/asset 5.webp" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col talk-col">
-                            <h5>Let's talk?</h5>
+                            <h5 data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="1000">Vamos conversar?</h5>
                         </div>
                     </div>
                 </div>
@@ -230,21 +244,25 @@
                     <div class="row">
                         <div class="col-md-6 p-0">
                             <div class="partner-box border">
-                                <img src="./images/asset 6.png" alt="">
+                                <img data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="500" src="./images/asset 6.png" alt="">
                             </div>
                         </div>
                         <div class="col-md-6 p-0">
                             <div class="partner-box border">
-                                <img src="./images/asset 7.png" alt="">
+                                <img data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="800" src="./images/asset 7.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col talk-col ">
                             <div class="">
-                                <p>
-                                    Talk to us through our phones or through the form below.</p>
-                                <a href="" class="more-btn">to start</a>
+                                <p data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="1200">
+                                    Fale conosco através de nossos telefones ou pelo formulário abaixo.</p>
+                                <a href="" data-aos="fade-right"data-aos-duration="1000"
+data-aos-delay="1400" class="more-btn">Começar</a>
                             </div>
                         </div>
                     </div>
@@ -268,28 +286,29 @@
                         <img src="./images/asset 0.png" alt="">
                         <div>
                             <h6 class="text-capitalize fw-bold mb-4">
-                                GO unit
+                                
+Unidade GO
                             </h6>
                             <p>
                                 (62) 3945-5411
 
-                                sac@tgfi.com.br
+sac@tgfi.com.br
 
-                                Av. dept. Jamel Cecílio, 3,310
+Av. Dep. Jamel Cecílio, 3.310
 
-                                Ed. Office Flamboyant, Room 307, Goiânia-GO, CEP: 74.810-100
+Ed. Office Flamboyant, Sala 307, Goiânia-GO, CEP: 74.810-100
                             </p>
                         </div>
                         <div>
                             <h6 class="text-capitalize fw-bold mb-4">
-                                sp unit
+                                Unidade SP
                             </h6>
                             <p>
                                 (11) 5198-4785
 
-                                sac@tgfi.com.br
+sac@tgfi.com.br
 
-                                Av. Paulista, 1.636, Room 1.504, Cerqueira César, São Paulo/SP, CEP: 01.310-200
+Av. Paulista, 1.636, Sala 1.504, Cerqueira César, São Paulo/SP, CEP: 01.310-200
                             </p>
                         </div>
                     </div>
@@ -300,19 +319,19 @@
                         <!-- Links -->
 
                         <p>
-                            <a href="#!" class="text-reset">Start</a>
+                            <a href="#!" class="text-reset">Início</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Services</a>
+                            <a href="#!" class="text-reset">Serviços</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">About</a>
+                            <a href="#!" class="text-reset">Sobre</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Technology</a>
+                            <a href="#!" class="text-reset">Tecnologia</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset more-btn">Contact</a>
+                            <a href="#!" class="text-reset more-btn">Contato</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -321,7 +340,7 @@
                     <div class="col-lg-6 Newsletter-col col-xl-3 mx-auto mt-5 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase   mb-4">
-                            Email Signup For Newsletter
+                            Assine nossa newsletter
                         </h6>
                         <form action="" class="newsletter-form">
                             <div class="mb-3 ">
@@ -330,7 +349,7 @@
                                     aria-describedby="emailHelp">
 
                             </div>
-                            <button type="submit" class="more-btn border-0">Submit</button>
+                            <button type="submit" class="more-btn border-0">Enviar</button>
                         </form>
                     </div>
                     <!-- Grid column -->
@@ -338,14 +357,15 @@
                     <!-- Grid column -->
                     <div class=" col-lg-6 col-xl-3 mx-auto mt-5 mb-md-0 mb-4">
                         <div class="social-follow">
-                            <p>redis socials:</p>
+                            <p>
+Redes sociais:</p>
                             <div class="social-icons">
                                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                             </div>
                         </div>
-                        <p class="mt-4">Política de Privacidade</p>
+                        <p class="mt-4"><a href="privacy.html" class="text-secondary" >Política de Privacidade</a></p>
                         <a href="" class="text-secondary">© 2023 por Agência Jota</a>
                     </div>
                     <!-- Grid column -->
@@ -358,12 +378,15 @@
 
     </footer>
     <!-- Footer -->
+    <!-- aos js  -->
+    <script src="/js/aos.js"></script>
     <!-- font awesome cdn  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
         integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bootsrap cdn  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
